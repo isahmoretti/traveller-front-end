@@ -1,4 +1,6 @@
 <!doctype html>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<jsp:useBean id="Usuario" type="br.com.masters3.beans.Usuario" scope="session"></jsp:useBean>
 <html lang="pt-br">
     <head>
         <meta charset="utf-8">
@@ -14,7 +16,7 @@
    	 <header class="p-4 text-light cor__fundo meu__header">
 	 	<div>
 	 		<h3>Projeto Traveller</h3>
-            <h5>Área do usuário</h5>
+            <h5>Área logada</h5>
 		 </div>
 		<div>
 			<a class="btn btn-outline-light" href="login.jsp">Logout <i class="fas fa-sign-out-alt"></i></a>
@@ -22,11 +24,11 @@
         </header>
         <div class="container my-5">
        		<div class="text-center mb-5">
-       			<img src="assets/images/usuario-gulliver.png" class="" alt="">
-       			<h2 class="my-1">Olá, Gulliver Traveller</h2>
-       			<p>gulliver@traveller.com.br</p>
+       			<img src="${Usuario.foto}" class="logo" alt="">
+       			<h2 class="my-1">Olá, <c:out value="${Usuario.nome}"></c:out></h2>
+       			<p><c:out value="${Usuario.email}"></c:out></p>
        			<p>Último acesso: 01/10/2021 às 14h00</p>
-       			<p>Nível do usuário: Administrador</p>
+       			<p><c:out value="${Usuario.nivel}"></c:out></p>
        			<p>
        				<a href="cadastro_usuario.jsp" class="btn btn-success btn-sm mr-2">Cadastrar um novo usuário</a>
        			</p>
