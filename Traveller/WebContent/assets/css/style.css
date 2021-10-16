@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+li{
+ list-style: none;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+ /* ÁREA DE LOGIN*/
+logo{
+	width:10rem;
+	align-items:center;
+}
+
+.cor__fundo{
+	background:linear-gradient(135deg, #182857, #084F8C, #54A4EA);
+}
+
+.meu__header{
+	display:flex;
+	align-items:center;
+	justify-content: space-between;
+	
+}
+
+.titulos{
+	color:#182857;
+	
+}
+
+
+.fa-paper-plane {
+    margin: 0.5rem;
+}
+.pointer {
+    cursor: pointer;
+}
+.meu__link {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.campo_login{
+	background-color:#DFE1F2;
+	border-radius: 2rem;
+}
+
+.botao_login{
+   background-color:#CE5D2F;
+   color: #fff;
+   margin-bottom: 20px;
+   border-radius: 1rem;
+   font-weight:900;
+
+   
+}
+
+.botao_login:hover{
+	text-decoration: none;
+	color:#CE5D2F;;
+	border: 1px solid #CE5D2F;
+	background-color:#fff;
+}
+
+ /* HOME */
+
+.botao-topo{
+    border-radius: 1rem;
+    box-shadow: 5px 5px 15px 0px  rgba(44,44,44,0.15);
+}
+
+.sidenav a{
+    color:#182857;
+    font-weight: 600;
+}
+
+.sidenav a:hover{
+    background: #DFE1F2;
+    text-decoration:none;
+    transition: .1s ease-out;
+}
+
+.botao-topo::hover, :active, link{
+    background-color: #182857;
+    color:#fff;
+}
+
+.links{
+    color:#182857;
+  }
+
+  .links:hover, :active, link{
+    text-decoration: none;
+    text-decoration: underline;
+
+}
+
+
+.campo-busca-home{
+    background-image:url("../images/home.svg");
+    width: 1136px;
+    height: 200px;
+    max-width: 100%;
+    border-radius: 2rem;
+}
+
+.campo-busca{
+    border-radius: 2rem;
+    
+}
+
+
+.campo-busca-home a{
+    color: #fff;
+    font-weight: 600;
+}
+
+.text-busca{
+    text-decoration: none;
+    color: #70757E;
+    box-shadow: 5px 5px 15px 0px  rgba(44,44,44,0.15);
+    border-radius: 2rem;
+}
+
+.icon_perto{
+    border:1px solid #70757E;
+    border-radius: 50%;
+    color: #212121;
+}
+
+.text-busca a{
+    color: #212121;
+    text-decoration:none;
+}
+
+.text-busca:hover{
+    background-color:#DFE1F2;
+}
+
+.miniatura{
+    border-radius: 10px;
+}
+
+.borda{
+    border:none;
+}
+
+.miniatura_grande{
+    border-radius: 20px;
+}
+
+.borda_card_imagem{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.borda_card_azul{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.titulos___home{
+	font-weight:900;
+}
+
+
+
+.h2__home:hover{
+	color:#182857;
+	cursor:pointer;
+}
+
+
+ /* DEMAIS PÁGINAS */
+
+#map{
+  height: 450px;
+  width: 100%;
+  background: #ddd;
+  border-radius: 1.5rem;
+}
+
+.imagem-topo{
+  border:none;
+}
+
+.pai{
+  display: flex;
+}
+
+.mapa{
+  width: 30%;
+  height: 200px;
+}
+
+
+.box{
+  width: 70%;
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.box::-webkit-scrollbar{
+  width: 12px;
+  background-color: #efefef;;
+}
+
+.box::-webkit-scrollbar-thumb{
+  background-color: #182857;
+  border-radius: 5px;
+}
+
+.icon_agencia{
+  border-radius: 1rem;
+  width: 80px;
+}
+
+.pai{
+  width: 100%;
+  height: 100%;
+}
+
+
+.pesquisa{
+  background-color: #fff;
+  border-radius: 2rem;
+}
+
+.blog-post-preco{
+  font-size: 1.5rem;
+}
+
+.estrela{
+ color: #CE5D2F;
+}
+
+
+.titulo__paginas{
+ color: #182857;
+}
+
+                            
+.blog-post-text{
+ margin-bottom: 0.5rem;
+ font-size: 1rem;
+ color:#4D5153;
+}
+
+
+
+.circulo{
+ border-radius: 20%;
+ background-color: #EDF0F2;
+ color:#4D5153;
+ font-size: 1.1em;
+ cursor: pointer;
+}
+
+.botao{
+ background-color:#CE5D2F;
+ color: #fff;
+ margin-bottom: 20px;
+ border-radius: 0.5rem;
+}
+
+.linha-rodape{
+ background-color:#EDF0F2;
+}
+
+
+.card-horizontal{
+ border: 1px solid #DADCE0;
+ border-radius: 2rem;
+ background-color: #fff;
+}
+
+.borda_arredondada{
+	border-radius:1.5rem;
+
+}
+
+.card-espaco{
+ border-radius:1.5rem;
+ width: 90%;
+ justify-content: flex-start;
+}
+
+.img-card{
+ border-radius:1.5rem;
+}
+
+.curtir{
+ font-size: 1.5rem;
+}
+
+a{
+	color:#182857;
+}
+
+a:hover{
+	text-decoration:none;
+	
+}
+
+.mapa{
+ width: 30%;
+}
+
+
+.imagem-topo{
+  border:none;
+  
+}
+
+@media (max-width:1440px){
+ .busca_btn{
+     width: 100%;
+     font-size: 1.2em;
+
+}
+
+@media(max-width: 1000px) {
+	
+ .mapa {
+      display: none;
+  }
+  .box{
+      width: 100%;
+  }  
+  
+  @media(max-width: 700px) {
+    .img-card{
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      
+      
+    }
+  }
+}
+}
